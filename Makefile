@@ -5,14 +5,14 @@ LDFLAGS=-lm
 
 all: grade gradet
 
-aluno: roteadort.c aluno.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -o aluno roteadort.c aluno.c
+aluno: roteamentot.c aluno.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o aluno roteamentot.c aluno.c 
 
-test: roteador.c test.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -o test roteador.c test.c -lm
+test: roteamento.c teste.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o test roteamento.c teste.c -lm
 
-testt: roteadort.c test.c
-	$(CC) $(CFLAGS) $(LDFLAGS) -o testt roteadort.c test.c
+testt: roteamentot.c testet.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o testt roteamentot.c testet.c -lm
 
 
 grade: test
